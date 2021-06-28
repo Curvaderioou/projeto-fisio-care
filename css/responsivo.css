@@ -1,0 +1,150 @@
+/*Estilo para tablet*/
+@media only screen and (min-width: 789px) and (max-width: 979px) {
+  .main p {
+    font-size: 0.875em;
+    padding: 10px;
+  }
+
+  .servicos li p {
+    font-size: 0.875em;
+  }
+}
+
+/*Estilo para mobile*/
+@media only screen and (min-width: 300px) and (max-width: 788px) {
+  .flex {
+    max-width: 300px;
+    flex-direction: column;
+  }
+
+  /*Intro*/
+
+  .nav ul li a {
+    margin-left: 0px;
+  }
+
+  .logo {
+    margin: 0 auto;
+  }
+
+  .logo img {
+    display: block;
+  }
+
+  /*navegação*/
+
+  .nav ul {
+    flex-direction: row;
+  }
+
+  .nav ul li {
+    margin: 16px 4px 0 4px;
+  }
+
+  .imagem-intro {
+    visibility: hidden;
+    position: absolute;
+  }
+
+  /*main*/
+
+  .main > div > img {
+    visibility: hidden;
+    position: absolute;
+  }
+
+  .main:nth-child(2) p {
+    text-align: left;
+  }
+
+  .main p {
+    font-size: 0.875em;
+    padding: 10px;
+  }
+
+  .bg-main {
+    padding: 16px 0;
+  }
+
+  /*Serviços*/
+
+  .bg-mais_servicos {
+    clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 95%);
+  }
+
+  .servicos li > div {
+    margin: 32px auto 32px auto;
+  }
+
+  .servicos li p {
+    font-size: 0.875em;
+  }
+
+  /*Sobre*/
+  .sobre P {
+    font-size: 0.875em;
+    margin-bottom: 0px;
+  }
+
+  .img-sobre img {
+    margin-top: 32px;
+  }
+
+  /*orçamento*/
+
+  .bg-orcamento {
+    clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .pattern-orcamento {
+    background: url(/img/pattern.png);
+    padding: 64px 10px 128px 10px;
+  }
+
+  .orcamento-info p {
+    font-size: 0.875em;
+    margin-bottom: 32px;
+  }
+
+  .section-formulario form {
+    flex-wrap: wrap;
+  }
+
+  .section-formulario h3 {
+    font-size: 1.125em;
+  }
+
+  .formulario {
+    padding-right: 0px;
+  }
+
+  .footer > p {
+    margin-bottom: 32px;
+  }
+
+  .formulario,
+  .textarea {
+    padding: 0px;
+  }
+
+  /*copy*/
+
+  .footer p {
+    font-size: 0.875em;
+    color: #f5fbf9;
+    display: flex;
+    align-self: center;
+  }
+
+  .footer a p {
+    display: block;
+  }
+
+  .footer a {
+    margin: 0 auto;
+  }
+
+  .footer p:first-child {
+    flex: initial;
+  }
+}

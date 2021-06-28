@@ -1,0 +1,476 @@
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/*Intro*/
+
+.bg-intro {
+  background: #174d4d;
+  color: #f5fbf9;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+}
+
+.bg-intro > .pattern > .flex > .logo,
+.bg-intro > .pattern > .flex > .nav {
+  padding: 0 10px;
+}
+
+.pattern {
+  background: url(/img/pattern.png);
+  padding: 32px 0;
+}
+
+.section-intro {
+  flex-direction: wrap;
+  padding: 64px 0;
+}
+
+.intro,
+.imagem-intro {
+  flex: 1;
+}
+
+.logo {
+  flex: 1;
+}
+
+.logo a img {
+  display: inline-block;
+}
+
+.intro h1 {
+  font-family: "legitima", serif;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.intro h1::after {
+  content: "";
+  background-image: url(../img/separador.svg);
+  display: block;
+  margin: 0 auto;
+  width: 225px;
+  height: 25px;
+}
+
+.intro h2 {
+  font-family: verdana, sans-serif;
+  font-size: 1.5em;
+  line-height: 1.25em;
+  text-align: center;
+  max-width: 300px;
+  margin: 32px auto 16px auto;
+}
+
+.intro p {
+  font-family: verdana, sans-serif;
+  font-size: 0.875em;
+  text-align: center;
+  line-height: 1.4em;
+  max-width: 280px;
+  margin: 0 auto 32px auto;
+}
+
+.intro a {
+  font-family: "legitima", serif;
+  font-size: 1.5em;
+  text-align: center;
+  display: block;
+  color: #174d4d;
+  border: 1px solid #f5c946;
+  background: #f5c946;
+  border-radius: 25px;
+  max-width: 185px;
+  padding: 10px 0;
+  margin: 0 auto;
+  box-shadow: -1px -1px #f5fbf9, 0px 6px 6px rgba(0, 0, 0, 0.25),
+    0px 8px 8px rgba(0, 0, 0, 0.25);
+}
+
+.intro a:hover {
+  box-shadow: 0px 0px #f5fbf9, 0px 4px 4px rgba(0, 0, 0, 0.25),
+    0px 6px 6px rgba(0, 0, 0, 0.25);
+}
+
+.nav {
+  align-self: center;
+}
+
+.nav ul li a {
+  font-family: "legitima", serif;
+  font-size: 1.125em;
+  text-transform: uppercase;
+  margin-left: 32px;
+  color: #f5fbf9;
+}
+
+.nav ul li a:hover {
+  color: #f5c946;
+}
+
+/*main*/
+
+.main {
+  display: flex;
+}
+
+.bg-main {
+  color: #f5fbf9;
+  padding: 64px 0;
+}
+
+.bg-main h2 {
+  font-family: "legitima", serif;
+  font-size: 2.5em;
+  text-align: center;
+  color: #021313;
+}
+.bg-main > p {
+  font-family: verdana, sans-serif;
+  font-size: 0.875em;
+  text-align: center;
+  color: #174d4d;
+  margin-bottom: 32px;
+}
+
+.main:nth-child(1) p {
+  text-align: left;
+}
+
+.main:nth-child(2) p {
+  text-align: center;
+}
+
+.main p {
+  font-family: verdana, sans-serif;
+  font-size: 1.125em;
+  line-height: 1.35em;
+  color: #021313;
+  align-self: center;
+  padding: 32px 64px 32px 32px;
+  flex: 1;
+}
+
+.main a {
+  font-family: "legitima", serif;
+  font-size: 1.5em;
+  text-align: center;
+  display: block;
+  color: #174d4d;
+  border: 1px solid #f5c946;
+  background: #f5c946;
+  border-radius: 25px;
+  max-width: 185px;
+  padding: 10px 15px;
+  margin: 32px auto 0 auto;
+  box-shadow: -1px -1px #174d4d, 0px 6px 6px rgba(0, 0, 0, 0.25),
+    0px 8px 8px rgba(0, 0, 0, 0.25);
+}
+
+.main a:hover {
+  box-shadow: 0px 0px #174d4d, 0px 4px 4px rgba(0, 0, 0, 0.25),
+    0px 6px 6px rgba(0, 0, 0, 0.25);
+}
+
+.main-section-btn {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-self: center;
+}
+
+/*Serviços*/
+
+.bg-mais_servicos {
+  background: #174d4d;
+  padding: 64px 0;
+  color: #f5fbf9;
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+}
+
+.bg-mais_servicos .pattern > h2 {
+  font-family: "legitima", serif;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.bg-mais_servicos .pattern > h2::after {
+  content: "";
+  background-image: url(../img/separador.svg);
+  display: block;
+  margin: 0 auto;
+  width: 225px;
+  height: 25px;
+}
+
+.servicos li {
+  flex: 1;
+}
+
+.servicos li div img {
+  display: block;
+  margin: 0 auto;
+}
+
+.servicos li > div {
+  display: flex;
+  border: 5px solid #f5c946;
+  height: 140px;
+  width: 180px;
+  border-radius: 100px;
+  background: #f5c946;
+  margin: 64px auto;
+  box-shadow: -2px -3px #f5fbf9, 0px 6px 6px rgba(0, 0, 0, 0.25),
+    0px 8px 8px rgba(0, 0, 0, 0.25);
+}
+
+.servicos li h3 {
+  font-family: "legitima", serif;
+  font-size: 1.5em;
+  line-height: 1.25em;
+  text-align: center;
+  max-width: 300px;
+  margin: 32px auto 16px auto;
+}
+
+.servicos li p {
+  font-family: verdana, sans-serif;
+  font-size: 1.125em;
+  text-align: center;
+  line-height: 1.4em;
+  max-width: 225px;
+  margin: 0 auto 32px auto;
+  padding: 0 10px;
+}
+
+/*Sobre*/
+
+.sobre,
+.img-sobre {
+  flex: 1;
+}
+
+.sobre {
+  padding: 0 20px 0 10px;
+}
+
+.sobre > p:first-child {
+  font-family: verdana, sans-serif;
+  font-size: 0.875em;
+  text-align: left;
+  color: #174d4d;
+}
+.sobre h2 {
+  font-family: "legitima", serif;
+  font-size: 2.5em;
+  text-align: left;
+  color: #021313;
+  margin-bottom: 32px;
+}
+.sobre P {
+  color: #021313;
+  font-family: verdana, sans-serif;
+  font-size: 1.125em;
+  text-align: left;
+  line-height: 1.4em;
+}
+
+.img-sobre img {
+  display: block;
+  max-width: 100%;
+}
+
+.img-sobre div p {
+  max-width: 250px;
+  padding: 0 20px;
+}
+
+/*orcamento*/
+
+.bg-orcamento {
+  background: #174d4d;
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+}
+
+.pattern-orcamento {
+  background: url(/img/pattern.png);
+  padding: 128px 10px 128px 10px;
+}
+
+.orcamento-info,
+.orcamento-bg {
+  flex: 1;
+}
+
+.orcamento-info h2 {
+  font-family: "legitima", serif;
+  font-size: 2.5em;
+  text-align: center;
+  color: #f5fbf9;
+}
+
+.orcamento-info h2:after {
+  content: "";
+  background-image: url(../img/separador.svg);
+  display: block;
+  margin: 0 auto;
+  width: 225px;
+  height: 25px;
+}
+
+.orcamento-info p {
+  color: #f5fbf9;
+  font-family: verdana, sans-serif;
+  font-size: 1.125em;
+  text-align: left;
+  line-height: 1.4em;
+  padding-right: 32px;
+  margin-top: 64px;
+  max-width: 475px;
+}
+
+.section-formulario form {
+  display: flex;
+  flex: 1;
+}
+
+.section-formulario h3 {
+  color: #f5fbf9;
+  font-family: verdana, sans-serif;
+  font-size: 1.5em;
+  margin: 64px 0 32px 0;
+}
+
+.formulario,
+.textarea {
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.formulario {
+  padding-right: 32px;
+}
+
+.formulario label {
+  font-family: "legitima", serif;
+  font-size: 1.5em;
+  color: #f5fbf9;
+  display: flex;
+}
+
+.formulario input {
+  max-width: 400px;
+  height: 50px;
+  background: #f5c946;
+  border-radius: 0px 100px 100px 0px;
+  box-shadow: -1px -1px #f5fbf9, 0px 6px 6px rgba(0, 0, 0, 0.25),
+    0px 8px 8px rgba(0, 0, 0, 0.25);
+  border: none;
+  margin: 8px 0 16px 0;
+}
+
+.textarea label {
+  font-family: "legitima", serif;
+  font-size: 1.5em;
+  color: #f5fbf9;
+}
+
+.textarea textarea {
+  max-width: 500px;
+  height: 200px;
+  background: #f5c946;
+  border: none;
+  border-radius: 0px 100px 100px 0px;
+  box-shadow: -1px -1px #f5fbf9, 0px 6px 6px rgba(0, 0, 0, 0.25),
+    0px 8px 8px rgba(0, 0, 0, 0.25);
+  margin: 8px 0 16px 0;
+  line-height: 2em;
+  padding: 16px 32px 16px 8px;
+  overflow-y: hidden;
+}
+
+input,
+textarea {
+  box-sizing: border-box;
+  outline: none;
+  text-indent: 1em;
+  font-family: verdana, sans-serif;
+}
+
+.textarea button {
+  font-family: "legitima", serif;
+  font-size: 1.5em;
+  text-align: center;
+  display: block;
+  color: #174d4d;
+  border: 1px solid #f5c946;
+  background: #f5c946;
+  border-radius: 25px;
+  width: 125px;
+  padding: 10px 0;
+  box-shadow: -1px -1px #f5fbf9, 0px 6px 6px rgba(0, 0, 0, 0.25),
+    0px 8px 8px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.textarea button:hover {
+  box-shadow: 0px 0px #f5fbf9, 0px 4px 4px rgba(0, 0, 0, 0.25),
+    0px 6px 6px rgba(0, 0, 0, 0.25);
+}
+
+/*Footer*/
+
+.bg-footer {
+  background: #174d4d;
+  padding: 16px 0;
+}
+
+.footer p:first-child {
+  flex: 1;
+}
+.footer p {
+  font-size: 1.125em;
+  color: #f5fbf9;
+  display: flex;
+  align-self: center;
+}
+
+.footer a {
+  display: flex;
+}
+
+.footer a img {
+  margin-left: 16px;
+}
+
+.nao-aparece {
+  visibility: hidden;
+  position: absolute;
+  height: 0px;
+}
+
+#form-sucesso {
+  color: #f5fbf9;
+  font-family: "legitima", serif;
+  font-size: 1.5em;
+  text-align: center;
+  width: 300px;
+  margin: 0 auto;
+}
+
+#form-erro {
+  color: #da1d1d;
+  font-family: "legitima", serif;
+  font-size: 1.5em;
+  text-align: center;
+  width: 300px;
+  margin: 0 auto;
+}
